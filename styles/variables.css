@@ -9,9 +9,12 @@
   --text-color: #F1B2CE;
   --sub-title-text-color: #000028; 
   --button-color: var(--accent-color);
+  --button-hover-color: #FF007066;
+  --button-focus-color: var(--accent-color);
   --header-corner-element:var(--accent-color);
   --header-decorative-element: var(--accent-color);
   --bg-color: #000028;
   --fonts: 'IBM Plex mono', Menlo, Consolas, monospace;
   --bg-image: url('../images/cover-image-dark.png');
+  --main-bg-image: url('../images/sunset.png')
 }

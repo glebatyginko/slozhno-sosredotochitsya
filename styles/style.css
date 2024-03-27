@@ -1,5 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   font-family: var(--fonts);
   font-weight: normal;
@@ -11,10 +9,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  object-fit: cover;
   background-attachment: fixed;
 }
 
+/* TITLE-DECOR */
+.title-decor {
+  background-color: var(--accent-color);
+}
+
+/* --HEADER-- */
 .header {
   display: grid; 
   grid-template-rows: minmax(228px, 1fr) min-content minmax(228px, 1fr); 
@@ -81,10 +84,28 @@
 .header__theme-menu-button {
   padding: 0 13px; 
   border: none;
-  line-height: 18px;
   background-color: transparent;
   color: var(--button-color);
   text-transform: lowercase;
+}
+
+.header__theme-menu-button:hover {
+  cursor: pointer;
+  border: 1px solid var(--button-hover-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none; 
+  border-bottom: 1px solid var(--button-focus-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--button-color);
 }
 
 .header__title {
@@ -101,7 +122,53 @@
   color: var(--sub-title-text-color);
 }
 
-/* TITLE-DECOR */
-.title-decor {
-  background-color: var(--accent-color);
+/* --MAIN-- */
+.main {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  gap: 50px;
+  padding: 0 10px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article__title {
+  color: var(--accent-color);
+  font-size: 18px;
+}
+
+.article__sub-title {
+  color: var(--sub-title-text-color);
+  font-size: 18px;
+}
+
+.article__content-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.article__content-block-title {
+  font-size: 18px;
+  color: var(--sub-title-text-color);
+}
+
+.article__content-block-sub-title {
+  color: var(--sub-title-text-color);
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* .article__content-block-text {} */
+
+/* MAIN IMAGE */
+.article__image-block {
+  background-image: var(--main-bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
