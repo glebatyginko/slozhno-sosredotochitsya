@@ -1,5 +1,106 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--fonts);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.3em;
+  color: var(--text-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  display: grid; 
+  grid-template-rows: minmax(228px, 1fr) min-content minmax(228px, 1fr); 
+  align-items: center;
+  padding: 10px;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.decorated-zone::after {
+  content: '';
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.header__decorative-element {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  top: 11px;
+  right: 20px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.header__decorative-element::after {
+  content: '';
+  block-size: 9px;
+  inline-size: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  align-self: center;
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.header__theme-menu-button {
+  padding: 0 12px; 
+  border: none;
+  line-height: 18px;
+  background-color: transparent;
+  color: var(--accent-color);
+  text-transform: lowercase;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+  line-height: 95.7px;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__text {
+  font-weight: bold;
+  line-height: 23.4px;
+  color: var(--sub-title-text);
+}
+
+/* TITLE-DECOR */
+.title-decor {
+  background-color: var(--accent-color);
 }
