@@ -323,6 +323,10 @@ img {
   .footer {
     padding: 20px;
   }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
 
 /* -------------------@MEDIA-1024px--------------------------------- */
@@ -366,7 +370,8 @@ img {
   .improve-focus-section {
     column-gap: 13px;
   }
-}
 
-    
-      
+  .footer__title {
+    line-height: 129.53px;
+  }
+}   
