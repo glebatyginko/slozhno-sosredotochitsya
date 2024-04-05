@@ -16,6 +16,7 @@
   --header-decorative-element: transparent;
   --bg-color: #FFF1F7;
   --fonts: 'IBM Plex mono', Menlo, Consolas, monospace;
+  --gap: 20px;
   --bg-image: url('../images/cover-image-light.png');
 }
 
@@ -32,6 +33,7 @@
     --header-decorative-element: transparent;
     --bg-color: #FFF1F7;
     --fonts: 'IBM Plex mono', Menlo, Consolas, monospace;
+    --gap: 20px;
     --bg-image: url('../images/cover-image-light.png');
     }
 }

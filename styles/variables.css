@@ -16,6 +16,7 @@
   --header-decorative-element: var(--accent-color);
   --bg-color: #000028;
   --fonts: 'IBM Plex mono', Menlo, Consolas, monospace;
+  --gap: 20px;
   --bg-image: url('../images/cover-image-dark.png');
-  --main-bg-image: url('../images/sunset.png')
+  --main-bg-image: url('../images/sunset.png');
 }
