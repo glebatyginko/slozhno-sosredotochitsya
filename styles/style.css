@@ -158,6 +158,10 @@
   color: var(--sub-title-text-color);
   font-size: 18px;
 }
+
+.article-section .card__title {
+  font-weight: normal;
+}
 /* article */
 .article-section {
   display: grid;
